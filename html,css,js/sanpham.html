@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sanpham.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-family: Helvetica;
+			margin: 0px auto;
+		}
+		#menu-top {
+			background-color: #142850;
+			height: 60px;
+			font-size: 16px;
+		}
+		#menu-top ul {
+			margin: 0px;
+			padding: 0px;
+		}
+		#menu-top ul li {
+			list-style: none;
+			float: left;
+		}
+		#menu-top ul li a {
+			text-decoration: none;
+			display: block;
+			line-height: 60px;
+			padding: 0px 30px 0px 30px;
+			color: #b3ffff;
+			border-right: solid 1px white;
+		}
+		#menu-top ul li a.active {
+			background-color: #00a8cc;
+		}
+		.hover1 {
+			transition: 0.5s;
+		}
+		.hover1:hover {
+			background-color: #cc0066;
+		}
+		#main {
+			margin-top: -28px;
+			background-image: url(bgr.gif);
+			background-size: cover;
+			height: 800px;
+		}
+		#main h1 {
+			margin-left: 5px;
+			padding: 30px;
+			font-size: 40px;
+			color: #00a8cc;
+			text-align: center;
+		}
+		#main h3 {
+			letter-spacing: 1px;
+			margin-left: 5px;
+			font-size: 20px;
+			color: #1aa3ff;
+		}
+		#main button {
+			border-radius: 17px;
+  			border: 3px solid #191966;
+  			background-color: lightblue;
+  			font-size: 20px;
+  			transition: 0.25s;
+  			box-shadow: 2px 5px 5px #66ffff;
+		}
+		#main button:hover {
+			background-color: white;
+			font-size: 25px;
+			box-shadow: 2px 7px 7px #66b3ff;
+		}
+		#concac {
+			width: 120px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu-top">
+		<ul>
+			<li><a href="index.html" title="Trang chủ" class="hover1">Trang chủ</a></li>
+			<li><a href="muawebsite.html" title="Mua Website" class="hover1">Mua Website</a></li>
+			<li><a href="sanpham.html" title="Sản phẩm" class="active">Sản phẩm</a></li>
+			<li><a href="lienhe.html" title="Liên hệ" class="hover1">Liên hệ</a></li>
+			<li><a href="login.html" title="Đăng nhập" class="hover1">Đăng nhập</a></li>
+			<img id="concac" src="logo.png">
+		</ul>
+	</div>
+	<div id="main">
+		<h1>Web Fun</h1>
+		<h3>The first:Jumpscare <br> Effect:It uses to troll your friend:v</h3>
+		<button onclick="window.location.href = 'sanpham-jumpscare.html'">Click Me To See</button>
+		<h3>The second:Game <br> Effect:Help you feel happy</h3>
+		<button onclick="window.location.href = 'sanpham-game.html'">Click Me To See</button>
+</body>
+</html>

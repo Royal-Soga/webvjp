@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lienhe.com</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-family: Helvetica;
+			margin: 0px auto;
+		}
+		#menu-top {
+			background-color: #142850;
+			height: 60px;
+			font-size: 16px;
+		}
+		#menu-top ul {
+			margin: 0px;
+			padding: 0px;
+		}
+		#menu-top ul li {
+			list-style: none;
+			float: left;
+		}
+		#menu-top ul li a {
+			text-decoration: none;
+			display: block;
+			line-height: 60px;
+			padding: 0px 30px 0px 30px;
+			color: #b3ffff;
+			border-right: solid 1px white;
+		}
+		#menu-top ul li a.active {
+			background-color: #00a8cc;
+		}
+		.hover1 {
+			transition: 0.25s
+		}
+		.hover1:hover {
+			background-color: #cc0066;
+		}
+		#main {
+			margin-top: -25px;
+			background-image: url(bgr2.gif);
+			background-size: cover;
+			height: 600px;
+		}
+		#main h2 {
+			margin-left: 90px;
+			padding: 30px;
+			font-size: 30px;
+			color: #00a8cc;
+			text-align: center;
+		}
+		#main a {
+			text-decoration: none; 
+		}
+		#main button {
+			padding: 0px 20px 0px 20px;
+			border-radius: 8px;
+  			border: 3px solid #000099;
+  			background-color: white;
+  			font-size: 25px;
+  			transition: 1s;
+  			height: 40px;
+  			line-height: 37px;
+  			letter-spacing: 0.8px
+		}
+		#main button:hover {
+			box-shadow: 2px 7px 7px #66b3ff;
+		}
+		#main2 {
+			text-align: center;
+		}
+		#concac {
+			width: 120px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu-top">
+		<ul>
+			<li><a href="index.html" title="Trang chủ" class="hover1">Trang chủ</a></li>
+			<li><a href="muawebsite.html" title="Mua Website" class="hover1">Mua Website</a></li>
+			<li><a href="sanpham.html" title="Sản phẩm" class="hover1">Sản phẩm</a></li>
+			<li><a href="lienhe.html" title="Liên hệ" class="active">Liên hệ</a></li>
+			<li><a href="login.html" title="Đăng nhập" class="hover1">Đăng nhập</a></li>
+			<img id="concac" src="logo.png">
+		</ul>
+	</div>
+	<div id="main">
+		<div id="main2">
+		<h2>My Page &hearts;</h2>
+		<button onclick="window.location.href = 'page.html'">Web For Fun</button>
+		</div>
+	</div>
+</body>
+</html>

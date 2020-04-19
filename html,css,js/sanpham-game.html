@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gamevui.com</title>
+	<style type="text/css">
+		body {
+			background-color: black;
+			margin: 0px
+		}
+		#main h1 {
+			color: white;
+			font-size: 45px;
+			text-shadow: 3px 3px 3px lightblue;
+			text-align: center;
+		}	
+		#main h3 {
+			color: red;
+			text-align: center;
+		}
+		#jumpscare {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			cursor:pointer;
+			visibility: hidden;
+		}
+		#aaa {
+			width: 10%;
+			height: 10%;
+		}
+		#main2 {
+			text-align: center;
+			font-size: 200%
+		}
+		#main2 a {
+			text-decoration: none;
+		}
+		#main2 img {
+			width: 250px;
+			height: 250px;
+		}
+	</style>
+</head>
+<body>
+<div id="main">
+<h1>Tìm điểm khác nhau</h1>
+<h3>Lưu ý:tìm đủ 5 điểm mới kiểm tra và ko gian lận</h3>
+</div>
+<div id="main2">
+<img src="everest.jpg"> <img src="everest.jpg"><br>
+<input type="button" onclick="jumpscare();" value="Check result">
+<a href="sanpham.html">return web</a>
+</div>
+<img id='jumpscare' src="ray2.png">
+<audio id="scream" src="audiojumpscare.mp3"></audio>
+<script type="text/javascript">
+	function jumpscare() {
+		var jumpscare = document.getElementById('jumpscare');
+			jumpscare.style.visibility='visible';	
+		var audio = document.getElementById('scream');
+			audio.play();
+	}
+</script>
+</body>
+</html>
