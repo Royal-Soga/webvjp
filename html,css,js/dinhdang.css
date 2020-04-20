@@ -1,7 +1,30 @@
+@media(min-width:350px){
+	#menu{
+		display: none;
+	}
+	#menu-small{
+		list-style: none;
+		color:red;
+	}
+	#menu-small{
+		display:none;
+	}
+	#menu-top-small:hover #menu-small{
+		 display: block;
+	}
+}
+@media(min-width:1600px){
+	#menu{
+		display: block;
+	}
+	#menu-top-small{
+		display: none;
+	}
+}
 body {
 	font-family: Tahoma;
-	font-size: 16px;
-	margin: 0px auto;
+	font-size: 100%;
+	margin: 0 auto;
 	background: linear-gradient(#27496d, #0c7b93,#00a8cc,#00a8cc,#0c7b93, #27496d);
 }
 #menu-top {
@@ -9,8 +32,8 @@ body {
 	height: 60px;
 }
 #menu-top ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 #menu-top ul li {
 	list-style: none;
@@ -19,66 +42,64 @@ body {
 #menu-top ul li a {
 	text-decoration: none;
 	display: block;
-	line-height: 60px;
-	padding: 0px 30px 0px 30px;
+	line-height: 380%;
+	padding: 0 30px 0px 30px;
 	color: #b3ffff;
 	border-right: solid 1px white;
 }
 #menu-top ul li a.active {
-	background-color: #00a8cc;
+	background-color: #4db8ff;
 }
 #banner {
 	text-align: center;
-	height: 373px;
-}
-#banner img {
-	height: 368px;
 }
 #main {
-	margin-top: 10px;
+	margin-top: 2%;
 	float: left;
 	min-height: 400px;
 }
 #main ul {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 #main ul li {
 	list-style: none;
 	clear: left;
 	border-bottom: 2px solid #6666ff; 
 	float: left;
-	margin-bottom: 20px; 
+	margin-bottom: 61.6%; 
+	width:140%;
+}
+#banner img{
+	padding-left: 5%;
 }
 #main ul li img {
 	float: left;
-	margin-right: 10px; 
-	margin-bottom: 20px; 
+	margin-right: 2%; 
+	margin-bottom: 3%; 
 }
 #main ul li h2 {
-	font-size: 15px;
-	margin-top: 0px;
+	font-size: 100%;
 }
 #main img {
 	width: 230px;
 	height: 132px;
 }
 #footer {
-	background-color: #00a8cc;
+	background-color: black;
 	text-align: center;
-	height: 60px;
-	line-height: 60px;
-	color: #142850;
+	line-height: 380%;
+	color: white;
 	clear: left;
 	letter-spacing: 3px;
 }
 .hover1 {
-	transition: 0.25s
+	transition: 1s;
 }
 .hover1:hover {
 	background-color: #cc0066;
 }
 #concac {
-	width: 120px;
+	width: 6%;
 	float: right;
 }
